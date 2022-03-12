@@ -1,0 +1,152 @@
+.contenidoLineas{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+/* .contenidoLineas h2{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 3%;
+} */
+
+.accionesListadoLinea{
+    display: flex;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    height: 7vh;
+    margin-bottom: 4%;
+}
+
+.accionesListadoLinea .btnLinea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid #163C79; */
+    column-gap: 10px;
+    border-radius: 15px;
+    width: 18%;
+    background-color: #FFF;
+    padding: 0px 5px;
+}
+
+.accionesListadoLinea .btnLinea:hover{
+    cursor: pointer;
+}
+
+.accionesListadoLinea .btnLinea i{
+    /* color: #163C79; */
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.accionesListadoLinea .btnLinea p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #163C79;
+}
+
+.listadoLineas .LineaGeneral{
+    display: flex;
+    column-gap: 2%;
+    /* align-items: center; */
+    /* width: 100%; */
+}
+
+.listadoLineas .LineaGeneral i:hover{
+    cursor: pointer;
+}
+
+.listadoLineas .LineaGeneral .Linea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 1% 5%;
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+.listadoLineas .LineaGeneral .Linea p{
+    font-weight: 500;
+}
+
+.listadoLineas .LineaGeneral .Linea .iconosLinea{
+    display: flex;
+    column-gap: 45px;
+}
+
+/* PARA EL MODAL */
+.modalCompartirLinea{
+    background: rgba(22, 60, 121, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90vh;
+    width: 100%;
+    /* z-index: 2; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalCompartirLinea .formCompartir{
+    background: #FFF;
+    padding: 25px;
+    border-radius: 15px;
+    width: 35%;
+}
+
+.modalCompartirLinea .formCompartir .contenedorModalCompartir h3{
+    text-align: center;
+    color: #163C79;
+    font-size: 25px;
+}
+
+/* .modalCompartirLinea .formCompartir .contenedorModalCompartir .formContenidoCompartir{
+    width: 110%;
+} */
+
+.modalCompartirLinea .formCompartir .contenedorModalCompartir .formContenidoCompartir .iconosRedesSociales{
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+    font-size: 45px;
+    /* margin-right: 10%; */
+    margin-top: 2%;
+}
+
+.modalCompartirLinea .formCompartir .contenedorModalCompartir .formContenidoCompartir .iconosRedesSociales i:hover{
+    cursor: pointer;
+}
+
+.modalCompartirLinea .formCompartir .contenedorModalCompartir .formContenidoCompartir p{
+    font-weight: 500;
+}
+
+.modalCompartirLinea .formCompartir .contenedorModalCompartir .formContenidoCompartir .botonesModalCompartir{
+    /* margin-right: 10%; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.modalCompartirLinea .formCompartir .contenedorModalCompartir .formContenidoCompartir .botonesModalCompartir button{
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+}
+
+.modalCompartirLinea .formCompartir .contenedorModalCompartir .formContenidoCompartir .botonesModalCompartir button:hover{
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.modalCompartirLinea .formCompartir .contenedorModalCompartir .formContenidoCompartir .botonesModalCompartir .btnCancelar{
+    background-color: #163C79;
+    color: #FFF;
+}

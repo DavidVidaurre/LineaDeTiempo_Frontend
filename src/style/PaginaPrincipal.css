@@ -1,0 +1,336 @@
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    height: 10vh;
+    background-color: #163C79;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    width: 100%;
+}
+
+.header .contenedorIMG{
+    /* display: flex;
+    margin-left: 3%;
+    column-gap:10%; */
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+}
+
+.header .contenedorIMG img{
+    height: 6vh;
+    column-gap: 200px;
+    /* padding-left: 15px; */
+    /* border-left: 2px solid #FFF; */
+}
+
+.header .contenedorIMG .separadorIMG{
+    width: 2px;
+    height: 6vh;
+    background-color: #FFF;
+}
+
+.header .contenedorENLACES{
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+}
+
+.header .contenedorENLACES .separador{
+    width: 2px;
+    height: 22px;
+    background-color: #FFF;
+}
+
+.header .contenedorENLACES button{
+    border: none;
+    background-color: transparent;
+    color: #FFF;
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.header .contenedorENLACES button:hover{
+    cursor: pointer;
+}
+
+.header .contenedorENLACES a{
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.header .contenedorENLACES a:hover{
+    cursor: pointer;
+}
+
+.cuerpoPagina{
+    padding-top: 10vh;
+    background-color: #FFF;
+}
+
+.seccionPrincipal{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8%;
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 5%;
+}
+
+.seccionPrincipal .principalTexto{
+    width: 40%;
+}
+
+.seccionPrincipal .principalTexto .tituloPrincipal{
+    text-align: center;
+    font-size: 60px;
+    color: #163C79;
+    margin-bottom: 2%;
+}
+
+.seccionPrincipal .principalTexto .subtituloPrincipal p{
+    text-align: justify;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+
+.seccionPrincipal .principalTexto .resumenPrincipal p{
+    text-align: justify;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
+.seccionPrincipal .principalTexto .btnRegistrar button{
+    background-color: #FFF;
+    border: solid 2px;
+    border-color: #163C79;
+    border-radius: 10px;
+    color: #163C79;
+    padding: 11px 44px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 20%;
+}
+
+.seccionPrincipal .principalTexto .btnRegistrar button:hover{
+    background-color: #163C79;
+    color: #FFF;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.seccionPrincipal .principalIMG{
+    display: grid;
+    justify-items: center;
+    padding-bottom: 5%;
+    width: 45%;
+}
+
+.seccionPrincipal .principalIMG .imgLinea img{
+    width: 315px;
+    height: 315px;
+}
+
+.seccionPrincipal .principalIMG .cuadrosInstructivos{
+    display: flex;
+    justify-content: space-around;
+    width: 110%;
+    margin-top: 8%;
+}
+
+.seccionPrincipal .principalIMG .cuadrosInstructivos .cuadro{
+    background-color: #D3EBFF;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #163C79;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aprendeComo h1{
+    text-align: center;
+    color: #163C79;
+    font-size: 35px;
+    text-decoration: underline;
+    margin-bottom: 3%;
+}
+
+.aprendeComo .aprendeUnico{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5% 0;
+}
+
+.aprendeComo .aprendeUnico .cuadrosAprende{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.aprendeComo .aprendeUnico .cuadrosAprende i{
+    display: grid;
+    justify-items: right;
+    align-items: center;
+    font-size: 35px;
+    color: #163C79;
+}
+
+.aprendeComo .aprendeUnico .cuadrosAprende .cuadro{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.aprendeComo .aprendeUnico .cuadrosAprende .cuadro div{
+    text-align: center;
+    background-color: #D3EBFF;
+    color: #163C79;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px 5px;
+}
+
+.aprendeComo .aprendeUnico .textoAprende{
+    width: 50%;
+    display: grid;
+    justify-items: left;
+    align-items: center;
+    text-align: justify;
+}
+
+.aprendeComo .aprendeUnico .textoAprende p{
+    font-weight: 300;
+}
+
+.seccionCreado h1{
+    text-align: center;
+    color: #163C79;
+    font-size: 35px;
+    text-decoration: underline;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.seccionCreado .imgCreado{
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+}
+
+.seccionCreado .imgCreado img{
+    width: 280px;
+    height: 110px;
+}
+
+.nosotros h1{
+    text-align: center;
+    color: #163C79;
+    font-size: 35px;
+    text-decoration: underline;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.nosotros .filaNosotros{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 22%;
+    column-gap: 10%;
+    padding-bottom: 5%;
+}
+
+.nosotros .filaNosotros .filaNosotros1 h3{
+    color: #5692CE;
+}
+
+.nosotros .filaNosotros .filaNosotros1 p{
+    color: #163C79;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nosotros .filaNosotros .filaNosotros2 h3{
+    color: #163C79;
+}
+
+.nosotros .filaNosotros .filaNosotros2 p{
+    color: #5692CE;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footerCopy{
+    background-color: #5692CE;
+    height: 5vh;
+}
+
+.footerCopy p{
+    line-height: 5vh;
+    text-align: center;
+    color: #FFF;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1100px){
+    .seccionPrincipal .principalTexto{
+        width: 50%;
+    }
+
+    .seccionPrincipal .principalIMG{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .seccionPrincipal{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .seccionPrincipal .principalTexto{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        column-gap: 10%;
+        margin-bottom: 10%;
+    }
+
+    .seccionPrincipal .principalTexto .tituloPrincipal{
+        font-size: 40px;
+    }
+    
+    .seccionPrincipal .principalTexto .subtituloPrincipal p{
+        font-size: 30px;
+    }
+
+    .seccionPrincipal .principalTexto .btnRegistrar button{
+        margin-left: 30%;
+        /* margin-top: -60%; */
+    }
+
+    .seccionPrincipal .principalIMG{
+        display: flex;
+        column-gap: 5%;
+        width: 100%;
+    }
+
+    .seccionPrincipal .principalIMG .cuadrosInstructivos{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0%;
+        align-items: center;
+    }
+
+    .seccionPrincipal .principalIMG .cuadrosInstructivos .cuadro{
+        width: 100%;
+    }
+}

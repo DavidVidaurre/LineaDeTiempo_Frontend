@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from "./components/Dashboard";
+import PaginaPrincipal from "./components/PaginaPrincipal";
+import Acceso from "./components/Acceso";
+// import FormularioDatosUsuario from '../src/components/FormularioDatosUsuario'
 
 function App() {
+  const [user, setUser]= useState(null)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>  
+        {/* <PaginaPrincipal/> */}
+        {/* <Acceso/> */}
+        {/* <FormularioDatosUsuario/> */}
+       <>
+      <BrowserRouter>
+        <Routes>
+            <Route
+                path='/'
+                element={<PaginaPrincipal/>}
+            />
+            <Route
+                path='/Acceso'
+                element={<Acceso/>}
+            />
+           {user && (
+              <Route
+                path='/Dashboard'
+                element={<Dashboard usuarios={()=>setUser(true)}/>}
+              />
+            )}
+        </Routes>
+      </BrowserRouter>
+      </>
     </div>
   );
 }
 
 export default App;
+
